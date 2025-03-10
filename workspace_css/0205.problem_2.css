@@ -1,0 +1,212 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 50px auto;
+  width: 1900px;
+}
+
+.nav, .top, .mid-top, .mid-bottom, .bottom-top, .bottom-bottom {
+  margin: 10px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.nav > div:first-child > span {
+  margin: 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav > div:first-child > span:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+.nav > div:last-child {
+  position: relative;
+}
+
+.nav input {
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 2px;
+  padding: 5px;
+  height: 25px;
+  outline: none;
+  color: grey;
+}
+
+.nav i {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  color: orange;
+  font-weight: bold;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.top > div:first-child{
+  height: 300px;
+  width: 100%;
+}
+
+.top > div:first-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top > div:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 80%;
+  height: 100%;
+}
+
+.top > div:last-child > p {
+  color: white;
+}
+
+.top > div:last-child > p:first-child {
+  font-size: 30px;
+  color: orange;
+  margin: 10px;
+}
+
+.top button {
+  margin: 10px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  border: none;
+  width: 150px;
+  height: 30px;
+}
+
+.top button:hover {
+  cursor: pointer;
+}
+
+.mid-top, .bottom-top {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mid-top > div:first-child, .bottom-top > div:first-child {
+  text-align: center;
+}
+
+.mid-top > div:first-child > p, .bottom-top > div:first-child > p {
+  margin: 10px 0;
+}
+
+.mid-bottom {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 110px;
+}
+
+.icon-area {
+  text-align: center;
+}
+
+.icon-area > i {
+  border: 10px solid orange;
+  border-radius: 50%;
+  padding: 10px;
+  color: orange;
+  font-size: 25px;
+}
+
+.text-area {
+  margin-top: 30px;
+}
+
+.text-area > p {
+  margin: 5px 0;
+}
+
+.text-area > p:first-child {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.text-area > p:last-child {
+  width: 200px;
+  font-size: 10px;
+  color: grey;
+}
+
+.bottom-bottom {
+  display: flex;
+}
+
+.bottom-bottom > div {
+  position: relative;
+  display: flex;
+  margin: 0 10px;
+}
+
+.name-card {
+  position: absolute;
+  bottom: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: rgba(0, 0, 0, 0.555);
+
+  width: 100%;
+  height: 80px;
+  padding: 15px 10px 10px 10px;
+}
+
+.name-card > p:first-child {
+  font-weight: bold;
+  color: white;
+  margin: 5px;
+}
+
+.name-card > p:last-child {
+  color: orange;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: orange;
+}
+
+.font-size {
+  font-size: 30px;
+}
+
+.img-width {
+  width: 80%;
+}

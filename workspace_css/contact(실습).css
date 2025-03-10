@@ -1,0 +1,63 @@
+body {
+  background-color: aquamarine;
+  border: 5px solid white;
+  height: 100vh; /* 화면비율에 맞춰서 꽉차게 높이 설정 */
+  /* height: 100%; 높이는 설정은 100%해도 화면비율에 맞춰서 꽉차지 않음 */
+  /* width: 100vw; 화면비율에 맞춰서 꽉차게 너비 설정 (단, 스크롤이 발생하면 잘림)  */
+  width: 100%; /* 화면비율에 맞춰서 꽉차게 너비 설정 (단, 스크롤이 발생해도 안잘림) */ 
+}
+
+.container {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container > div {
+  background-color: white;
+  /* padding: 30px; */
+  margin: 10px;
+  border-radius: 10px;
+
+  display: flex;
+}
+
+.container > div:hover {
+  scale: 1.2;
+  transition: all 1s;
+}
+
+.img-box {
+  width: 20%;
+  margin: 20px;
+}
+
+.content-box {
+  width: 80%;
+  margin: 20px;
+}
+
+
+img {
+  width: 100px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+
+.content-box > div {
+  height: 50%;
+}
+
+.content-box > div:first-child {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.content-box > div:last-child {
+  font-size: 30px;
+  color: grey;
+}

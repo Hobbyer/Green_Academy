@@ -1,0 +1,22 @@
+
+.box {
+  width: 300px;
+  height: 150px;
+  border: 1px solid black;
+  margin: 55px;
+
+  /* content가 박스(영역) 범위를 넘었을 경우 어떻게 표현할지 설정 */
+  overflow: auto;
+}
+
+.d2 {
+  overflow: hidden;
+}
+
+.d3 {
+  overflow: visible;
+}
+
+.d4 {
+  overflow: scroll;
+}

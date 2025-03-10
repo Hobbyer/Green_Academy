@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.green.emp_manager.mapper.EmpMapper">
+	<select id="empList" resultType="EmpListDTO">
+        SELECT E.DEPT_NO, E.JOB_NO, EMP_NO, D.DEPT_NAME, J.JOB_NAME, EMP_NAME, GENDER, HIRE_DATE FROM REACT_EMP E
+        INNER JOIN REACT_JOB J ON J.JOB_NO = E.JOB_NO
+        INNER JOIN REACT_DEPT D ON D.DEPT_NO = E.DEPT_NO
+        <where>
+            <if test="id != 'null' and !id.equals('undefined')">
+                E.DEPT_NO = #{id}
+                <if test="!content.equals('undefined')">
+                    AND EMP_NAME = #{content}
+                </if>
+                <if test="!gender.equals('undefined')">
+                    AND GENDER = #{gender}
+                </if>
+                <if test="!startDate.equals('undefined')">
+                    AND HIRE_DATE >= #{startDate}
+                    <if test="!lastDate.equals('undefined')">
+                        AND HIRE_DATE <![CDATA[ <= ]]> #{lastDate}
+                    </if>
+                </if>
+                <if test="startDate.equals('undefined') and !lastDate.equals('undefined')">
+                    AND HIRE_DATE <![CDATA[ <= ]]> #{lastDate}
+                </if>
+            </if>
+            <if test="(id == 'null' or id.equals('undefined')) and content != 'null'  and !content.equals('undefined')">
+                EMP_NAME = #{content}
+                <if test="gender != 'null' and !gender.equals('undefined')">
+                    AND GENDER = #{gender}
+                </if>
+                <if test="!startDate.equals('undefined')">
+                    AND HIRE_DATE >= #{startDate}
+                    <if test="!lastDate.equals('undefined')">
+                        AND HIRE_DATE <![CDATA[ <= ]]> #{lastDate}
+                    </if>
+                </if>
+                <if test="startDate.equals('undefined') and !lastDate.equals('undefined')">
+                    AND HIRE_DATE <![CDATA[ <= ]]> #{lastDate}
+                </if>
+            </if>
+            <if test="id.equals('undefined') and content.equals('undefined') and gender != 'null' and !gender.equals('undefined')">
+                GENDER = #{gender}
+                <if test="!startDate.equals('undefined')">
+                    AND HIRE_DATE >= #{startDate}
+                </if>
+                <if test="startDate.equals('undefined') and !lastDate.equals('undefined')">
+                    AND HIRE_DATE <![CDATA[ <= ]]> #{lastDate}
+                </if>
+            </if>
+            <if test="id.equals('undefined') and content.equals('undefined') and gender.equals('undefined') and !startDate.equals('undefined')">
+                HIRE_DATE >= #{startDate}
+                <if test="!lastDate.equals('undefined')">
+                    AND HIRE_DATE <![CDATA[ <= ]]> #{lastDate}
+                </if>
+            </if>
+            <if test="id.equals('undefined') and content.equals('undefined') and gender.equals('undefined') and startDate.equals('undefined') and !lastDate.equals('undefined')">
+                HIRE_DATE <![CDATA[ <= ]]> #{lastDate}
+            </if>
+        </where>
+    </select>
+
+    <insert id="insertEmp">
+        INSERT INTO REACT_EMP
+        (DEPT_NO, JOB_NO, EMP_NAME, GENDER, HIRE_DATE)
+        VALUES (#{deptNo}, #{jobNo}, #{empName}, #{gender}, #{hireDate})
+    </insert>
+
+    <delete id="deleteEmp">
+        DELETE FROM REACT_EMP
+        WHERE DEPT_Name = #{deptName} AND JOB_NAME = #{jobName} AND EMP_NAME = #{empName} AND GENDER = #{gender}
+    </delete>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

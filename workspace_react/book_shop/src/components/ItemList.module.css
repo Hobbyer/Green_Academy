@@ -1,0 +1,12 @@
+.itemList {
+  margin: 20px 0;
+}
+
+.itemList > table {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.itemList td {
+  border: 1px solid black;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 해당 파일에 모든 쿼리문을 작성 -->
+<!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
+<mapper namespace="com.green.item_order.mapper.OrderMapper">
+    <!-- 조회 결과 데이터를 직접 가져오는 태그 <resultMap> -->
+    <resultMap id="orderDTO" type="OrderDTO">
+        <id property="orderNum" column="ORDER_NUM" />
+        <result property="itemNum" column="ITEM_NUM" />
+        <result property="buyCnt" column="BUY_CNT" />
+        <result property="buyPrice" column="BUY_PRICE" />
+        <result property="buyer" column="BUYER" />
+        <result property="buyDate" column="BUY_DATE" />
+        <!-- 1:1 관계 => association [javaType], 1:N 관계 => collection  [ofType]  -->
+        <association property="itemDTO" javaType="ItemDTO">
+            <result property="itemName" column="ITEM_NAME" />
+            <result property="itemPrice" column="ITEM_PRICE" />
+        </association>
+    </resultMap>
+
+    <select id="orderList" resultMap="orderDTO">
+        SELECT I.ITEM_NUM, ORDER_NUM, ITEM_NAME, ITEM_PRICE, BUY_CNT, BUY_PRICE, BUYER, BUY_DATE
+        FROM ORDER_INFO O JOIN ITEM_INFO I
+        ON O.ITEM_NUM = I.ITEM_NUM
+        ORDER BY BUY_DATE DESC
+    </select>
+
+	<insert id="insertOrder">
+        INSERT INTO ORDER_INFO
+        (ITEM_NUM, BUYER, BUY_CNT, BUY_PRICE)
+        VALUES(#{itemNum}, #{buyer}, #{buyCnt}, #{buyPrice})
+    </insert>
+
+    <delete id="deleteOrder">
+        DELETE FROM ORDER_INFO
+        WHERE ORDER_NUM = #{orderNum}
+    </delete>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

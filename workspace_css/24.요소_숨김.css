@@ -1,0 +1,32 @@
+div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 20px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.d1 {
+  background-color: aqua;
+
+  /* display: none -> 요소없앰 */
+  display: none;
+}
+
+.d2 {
+  background-color: yellow;
+
+  /*
+   visibility : visible (기본값) 
+   hidden -> 숨김
+   */
+  visibility: hidden;
+}
+
+.d3 {
+  background-color: chocolate;
+
+  /* opacity : 불투명정도 설정 (0~1) */
+  opacity: 0.3;
+}

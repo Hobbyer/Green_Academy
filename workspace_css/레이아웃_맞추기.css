@@ -1,0 +1,61 @@
+
+.container {
+  /* border: 1px solid black; */
+  width: 500px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.grade-info {
+  margin: 20px 0;
+}
+
+span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  margin: 15px auto;
+}
+
+tbody > tr:first-child {
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+}
+tbody > tr:last-child {
+  background-color: grey;
+}
+
+thead > tr {
+  border: none;
+  text-align: right;
+}
+
+tfoot > tr {
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  color: red;
+}
+
+td {
+  border: 1px solid white;
+  padding: 3px;
+}
+
+.button-area {
+  margin: 10px 0;
+  text-align: right;
+}
+
+button {
+  width: 80px;
+  border: none;
+  background-color: blue;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}

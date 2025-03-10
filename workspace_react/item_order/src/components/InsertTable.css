@@ -1,0 +1,32 @@
+.insertTable table {
+  width: 50%;
+  align-content: center;
+}
+
+.insertTable tr td {
+  background-color: rgb(165, 199, 230);
+  border: 1px solid white;
+}
+
+.insertTable td {
+  padding: 3px;
+}
+
+.insertTable td:first-child {
+  text-align: center;
+  align-content: center;
+}
+
+.insertTable .btn-area {
+  width: 49%;
+  text-align: right;
+  margin: 10px;
+}
+
+.insertTable .btn-area > button {
+  width: 120px;
+  height: 30px;
+  background-color: rgb(125, 187, 238);
+  color: white;
+  border: none;
+}

@@ -1,0 +1,22 @@
+.adminContainer{
+  width: 100%;
+}
+
+.adminHeader > ul{
+  display: flex;
+  gap: 20px;
+}
+
+.adminBody {
+  display: flex;
+}
+
+.sideDiv {
+  width: 20%;
+  border: 1px solid black;
+}
+
+.contentDiv {
+  width: 80%;
+  border: 1px solid black;
+}

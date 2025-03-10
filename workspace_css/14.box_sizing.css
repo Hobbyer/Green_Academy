@@ -1,0 +1,26 @@
+.container {
+  border: 5px solid red;
+  width: 500px;
+  margin: 20px;
+}
+
+.inner1 {
+  font-size: 2rem;
+  border: 5px solid black;
+  padding: 0px 10px;
+
+  /* 기본적으로 width 속성은 margin, padding 등의 영역을 제외하고 content 영역의 너비만 의미한다 */
+  width: 500px;
+  /* 컨텐츠 영역을 기준으로 박스 크기 설정 */
+  box-sizing: content-box; /* default */
+}
+
+.inner2 {
+  font-size: 2rem;
+  border: 5px solid black;
+  padding: 0px 10px;
+  width: 500px;
+
+  /* width 속성을 테두리까지의 너비로 설정해줄 수 있다 */
+  box-sizing: border-box; /* 테두리까지를 박스 크기로 설정 */
+}

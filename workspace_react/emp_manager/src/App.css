@@ -1,0 +1,26 @@
+.dept_job_list{
+  width: 70%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.insert_area > button {
+  background-color: #2d75b6;
+  color: white;
+  border: none;
+}
+
+.list_table th{
+  background-color: #2d75b6;
+  color: white;
+}
+.list_table tr:nth-child(odd){
+  background-color: #d2deee;
+}
+.list_table tr:nth-child(even){
+  background-color: #eaeef7;
+}
+.list_table td{
+  border: 1px solid white;
+}

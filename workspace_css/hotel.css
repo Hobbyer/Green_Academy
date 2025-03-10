@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Montserrat", sans-serif; 
+}
+
+.container {
+  background-color: aquamarine;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-card {
+border-radius: 10px;
+ width: 360px;
+ background-color: white;
+ box-shadow: 0px 1px 10px;
+ 
+ /* overflow: hidden; */
+}
+
+.img-box {
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  overflow: hidden;
+}
+
+.img-box > img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.img-box > img:hover {
+  scale: 1.1;
+  transition: all 1s;
+}
+
+.img-box > i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.content-box {
+  padding: 10px;
+}
+
+.price-info p {
+  margin: 5px 0;
+}
+.price-info p:nth-child(1) {
+  font-weight: bold;
+}
+.price-info p:nth-child(2) {
+  color: rgb(255, 123, 0);
+  font-weight: bold;
+  font-size: 30px;
+}
+.price-info p:nth-child(3) {
+  color: rgb(141, 134, 134);;
+}
+
+.option-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  
+  margin: 10px 0;
+  padding: 25px 15px;
+  
+  border-top: 1px solid rgb(199, 199, 199);
+  border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.option-info > div {
+  display: flex;
+  gap: 5px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.content-box > div:last-child > p {
+  margin-bottom: 10px;
+}
+.footer-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-line > div:last-child {
+  align-self: center;
+}
+
+button {
+  background-color: rgb(109, 228, 109);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 100px;
+  height: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: green;
+}
+
+.contact-info {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-info > img {
+  width: 50px;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 50%;
+}
+
+.contact-info > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.contact-info p:first-child {
+  font-weight: bold;
+}

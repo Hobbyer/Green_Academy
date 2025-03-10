@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./CSS_회원가입.css">
+</head>
+<body>
+  <div class="container">
+    <div class="head">
+      <span>회원가입</span><br>
+      회원이 되어 다양한 혜택을 경험해 보세요!
+    </div>
+    <div class="contents">
+      <form action="">
+        <table>
+          <tbody>
+            <tr>
+              <td>아이디<span>*</span></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" size="40" placeholder="아이디 입력(6~20자)" minlength="6" maxlength="20" required>
+                <input class="confirm-btn" type="button" value="중복 확인">
+              </td>
+            </tr>
+            <tr>
+              <td>비밀번호<span>*</span></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="password" name="password" size="60px" placeholder="비밀번호 입력(문자,숫자,특수문자 포함 8~20자)" required>
+              </td>
+            </tr>
+            <tr>
+              <td>비밀번호 확인<span>*</span></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="password" name="password" size="60px" placeholder="비밀번호 재입력" required>
+              </td>
+            </tr>
+            <tr>
+              <td>이름<span>*</span></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" size="60px" placeholder="이름을 입력해주세요">
+              </td>
+            </tr>
+            <tr>
+              <td>주소<span>*</span></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" size="60px" placeholder="주소를 입력해주세요" required> <br>
+                <input type="text" size="60px" placeholder="상세주소" required>
+              </td>
+            </tr>
+            <tr>
+              <td>전화번호<span>*</span></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" size="60px" placeholder="휴대폰 번호 입력('-'제외 11자리 입력)" minlength="11" maxlength="11">
+              </td>
+            </tr>
+            <tr>
+              <td>이메일 주소<span>*</span></td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" size="17px" placeholder="이메일 주소"> @ <input type="text" size="17px" disabled>
+                <select>
+                  <option disabled selected>선택</option>
+                  <option>naver.com</option>
+                  <option>google.com</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>생년월일</td>
+            </tr>
+            <tr class="birth">
+              <td>
+                <select>
+                  <option>년도</option>
+                </select>
+                <select >
+                  <option>월</option>
+                </select>
+                <select >
+                  <option>일</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+    </div>
+    <div class="button-area">
+      <button class="join-btn" type="button">가입완료</button>
+      <button class="cancle-btn" type="button">가입취소</button>
+    </div>
+  </div>
+</body>
+</html>

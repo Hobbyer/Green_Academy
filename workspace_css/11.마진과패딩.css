@@ -1,0 +1,49 @@
+.d1 {
+  border: 1px solid black;
+  width: 200px;
+  /* 안쪽여백 */
+  padding: 20px; /* 상하좌우(테두리안쪽) 여백 */
+}
+
+.d2 {
+  border: 1px solid black;
+  width: 200px;
+  /* 바깥여백 */
+  margin: 20px; /* 상하좌우(테두리바깥) 여백 */
+}
+
+.d3 {
+  border: 1px solid black;
+  width: 200px;
+
+  /* 테두리안쪽 여백 상,하,좌,우 각각 설정, 12시방향부터 시계방향 */
+  padding: 10px 20px 30px 40px;
+  /*
+  테두리안쪽 여백 한쪽만 설정할 때
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px; 
+  */
+
+  /* 상하, 좌우 */
+  /* padding: 10px(상하) 20px(좌우); */
+}
+
+.d4 {
+  border: 1px solid black;
+  width: 200px;
+  
+  /* 테두리바깥쪽 여백 상,하,좌,우 각각 설정, 12시방향부터 시계방향 */
+  margin: 10px 20px 30px 40px;
+  /*
+  테두리안쪽 여백 한쪽만 설정할 때
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px; 
+  */
+
+  /* 상하, 좌우 */
+  /* margin: 10px(상하) 20px(좌우); */
+}

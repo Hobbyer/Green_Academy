@@ -1,0 +1,53 @@
+.off {
+  visibility: hidden;
+}
+
+table {
+  border: 1px solid black;
+}
+td {
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+  height: 500px;
+  border: 1px solid black;
+}
+
+.left-box, .right-box {
+  padding: 16px;
+  text-align: center;
+  justify-items: center;
+  /* align-content: center; */
+  width: 50%;
+}
+.left-box {
+  border-right: 1px solid black;
+}
+
+.visiOff {
+  visibility: hidden;
+}
+
+
+.container8 {
+  justify-items: center;
+}
+
+.content-box {
+  display: flex;
+  width: 500px;
+}
+
+.content-box > div {
+  margin: 10px;
+}
+
+.content-box > div:first-child {
+  width: 30%;
+}
+
+.basic-input {
+  width: 120px;
+}

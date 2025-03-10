@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 서브메뉴1, 2 배경 색상 설정 */
+    /* 자식 : 부모 > 자식 */
+    ul > li {
+      font-weight: lighter;
+      background-color: red;
+    }
+    ol > li {
+      font-weight: bold;
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <h2>자식 선택자</h2>
+
+  <ol>
+    <li>
+      메뉴1
+      <ul>
+        <li>서브메뉴1</li>
+        <li>서브메뉴2</li>
+      </ul>
+    </li>
+    <li>메뉴2</li>
+  </ol>
+
+</body>
+</html>

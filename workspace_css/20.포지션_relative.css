@@ -1,0 +1,35 @@
+/* 
+  position : relative -> 상대적인 위치 설정.
+
+  기존의 박스 위치 기준에서 이동한다
+*/
+
+div {
+  width: 300px;
+  height: 300px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 300px;
+  border: 1px solid black;
+}
+
+.d1 {
+  background-color: red;
+}
+
+.d2 {
+  background-color: blue;
+}
+
+.d3 {
+  background-color: green;
+}
+
+/* 선택자:hover -> 태그에 마우스를 올리면~ 적용! */
+.d2:hover{
+  background-color: blueviolet;
+
+  position: relative;
+  top: 20px;
+  left: 20px;
+}

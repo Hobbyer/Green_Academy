@@ -1,0 +1,24 @@
+/* <div> 태그 안의 <p> 태그중에서 첫번째 자식만 디자인 */
+div > p:first-child {
+  color: red;
+}
+
+/* div 태그 안의 자식 p 태그 중 마지막 자식만 디자인 */
+div > p:last-child {
+  color: blue;
+}
+
+/* div 태그 안의 자식 p 태그 중 n번째 자식만 디자인 */
+div > p:nth-child(3) {
+  color: green;
+}
+
+/* <ul> 태그 안의 자식 li 중 짝수번째 자식만 디자인 */
+/* odd : 홀수, even : 짝수 */
+ul > li:nth-child(even){
+  color: aqua;
+}
+
+ul > li:nth-child(odd){
+  color: purple;
+}

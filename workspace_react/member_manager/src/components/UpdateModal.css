@@ -1,0 +1,17 @@
+.update-window {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.update-window > div:first-child {
+  text-align: center;
+  margin: 10px;
+}
+
+.update-window input {
+  width: 200px;
+  margin: 5px;
+}

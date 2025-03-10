@@ -1,0 +1,33 @@
+/* 
+  position : absolute -> 절대적 위치 설정 (스크롤하면 따라오지 않음. 페이지기준, 웹창(화면)기준X)
+*/
+
+div {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 300px;
+}
+
+.d1 {
+  /*
+   z-index는 3차원 z방향의 위치를 설정하는 것이다.
+   단, position이 static(정적)상태가 아니어야만 적용이 된다.
+  */
+  position: absolute;
+  z-index: 100;
+
+  background-color: aqua;
+}
+
+.d2 {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  /* z-index: 99; */
+  z-index: 101;
+
+  background-color: chartreuse;
+}

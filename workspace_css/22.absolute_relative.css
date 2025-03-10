@@ -1,0 +1,19 @@
+.img-area {
+  width: 200px;
+  height: 800px;
+  text-align: center;
+  margin: 50px;
+
+  position: relative;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+}
+
+i {
+  position: absolute;
+  right: 5px;
+  font-size: 30px;
+}

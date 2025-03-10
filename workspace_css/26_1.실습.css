@@ -1,0 +1,98 @@
+.body {
+  border: 5px solid black;
+}
+
+/* 레이아웃1 */
+.header{
+  border: 5px solid aqua;
+  height: 80px;
+}
+
+.middle{
+  border: 5px solid orange;
+  height: 300px;
+
+  display: flex;
+}
+
+.footer{
+  border: 5px solid grey;
+  height: 80px;
+}
+
+.side{
+  border: 5px solid purple;
+  width: 20%;
+}
+
+.content{
+  border: 5px solid purple;
+  width: 80%;
+}
+
+
+/* 레이아웃2 */
+.top-line{
+  border: 5px solid greenyellow;
+  height: 80px;
+
+  display: flex;
+}
+.mid-line{
+  border: 5px solid pink;
+  height: 300px;
+
+  display: flex;
+}
+.bottom-line{
+  border: none;
+  height: 80px;
+}
+
+.one{
+  border: 5px solid red;
+  width: 60%;
+}
+.two{
+  border: 5px solid aqua;
+  width: 40%;
+}
+.three{
+  border: 5px solid burlywood;
+  width: 30%;
+}
+.four{
+  border: 5px solid burlywood;
+  width: 70%;
+}
+
+/* 레이아웃3 */
+.head{
+  border: 5px solid goldenrod;
+
+  height: 100px;
+}
+.mid{
+  border: 5px solid green;
+  height: 360px;
+  
+  display: flex;
+}
+.left{
+  border: 5px solid rgb(0, 108, 116);
+  width: 60%;
+}
+.right{
+  border: 5px solid rgb(0, 108, 116);
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+}
+.right > div {
+  border: 5px solid blue;
+  /* height: 120px; */
+
+  /* flex-grow : 균등한 너비로 꽉 채우기(상대적인 크기로) */
+  flex-grow: 1;
+}

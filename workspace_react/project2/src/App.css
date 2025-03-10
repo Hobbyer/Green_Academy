@@ -1,0 +1,42 @@
+div {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.flex-box {
+  display: flex;
+}
+
+.flex-box > div {
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+  align-content: center;
+  text-align: center;
+  background-color: red;
+  color: white;
+}
+
+#showBox {
+  /* display: none; */
+  visibility: hidden;
+}
+
+#cnt-line {
+  background-color: rgb(219, 218, 218);
+  width: 250px;
+}
+
+#cnt-line > :last-child{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button-area {
+  background-color: rgb(219, 218, 218);
+  width: 250px;
+}
+
+#visibility-on {
+  visibility: hidden;
+}

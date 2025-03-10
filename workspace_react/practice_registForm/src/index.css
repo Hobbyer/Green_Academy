@@ -1,0 +1,104 @@
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.header, .mid, .bottom {
+  border-bottom: 1px solid grey;
+}
+
+.container {
+  width: 1000px;
+}
+
+.content-box {
+  display: flex;
+  border: 1px solid grey;
+  border-bottom: none;
+  font-size: 13px;
+}
+
+.left-box, .right-box {
+  align-content: center;
+  /* height: 50px; */
+  padding-left: 10px;
+}
+
+.left-box {
+  width: 20%;
+  background-color: rgb(226, 226, 226);
+  border-right: 1px solid grey;
+}
+
+.red-star {
+  padding-left: 3px;
+  color: red;
+}
+
+
+.support-text {
+  font-size: 10px;
+}
+
+.basic-input {
+  width: 150px;
+}
+
+.addr-box{
+  height: 110px;
+  margin-bottom: 5px;
+}
+
+.addr-btn {
+  font-weight: bold;
+  height: 10px;
+}
+
+.addr-line {
+  margin: 8px 0px;
+}
+
+.first-line > input {
+  width: 80px;
+}
+.second-line > input {
+  width: 300px;
+}
+.third-line > input {
+  width: 300px;
+}
+
+.call-number input, .phone-number input {
+  width: 80px;
+}
+
+.receive > p {
+  margin: 0;
+}
+
+.always-user > p {
+  margin: 3px 0;
+}
+
+.birth {
+  display: flex;
+  align-items: center;
+}
+
+.birth-date > input {
+  width: 50px;
+}
+.birth-date > input:first-child {
+  width: 70px;
+}
+
+.complete-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.btn-area > button {
+  margin: 0 5px;
+}

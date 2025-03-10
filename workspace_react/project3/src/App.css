@@ -1,0 +1,30 @@
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  width: 80px;
+}
+
+th {
+  text-align: center;
+}
+#board-table > tbody > tr > :nth-child(1) {
+  width: 50px;
+}
+#board-table > tbody > tr > :nth-child(2) {
+  width: 50px;
+}
+#board-table > tbody > tr > :nth-child(3) {
+  width: 200px;
+  text-align: left;
+  padding-left: 10px;
+}
+#board-table > tbody > tr > :nth-child(4) {
+  width: 80px;
+}
+#board-table > tbody > tr > :nth-child(5) {
+  width: 150px;
+}

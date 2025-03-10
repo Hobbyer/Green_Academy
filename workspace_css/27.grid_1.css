@@ -1,0 +1,36 @@
+.container {
+  width: 600px;
+  height: 400px;
+  margin: 20px auto;
+  border: 1px solid black;
+
+
+  /* grid : 격자 배치 */
+  display: grid;
+  /* display : inline-grid */
+
+  /* 열의 갯수 설정 및, 1열 2열 3열 각각의 열크기 설정(px, %, fr, repeat(개수,크기) */
+  /* grid-template-columns: 50px 100px 50px; */
+
+  /* fr : 부모태그 block을 꽉 채우면서 상대적 크기 배분 */
+  grid-template-columns: 2fr 3fr 4fr;
+  
+  /* 행의 갯수 설정 및, 1행 2행 3행 각각의 행크기 설정(px, %, fr, repeat(개수,크기)
+  (block요소의 경우 행만 설정하면 적용안됨(?)) */ 
+  /* grid-template-rows: 50px 50px 100px; */
+
+  /* repeat(개수,크기) : 같은 크기로 몇개를 설정하겠다 */
+  grid-template-rows: repeat(3,100);
+
+  /* 태그 내의 아이템들의 간격을 설정 */
+  /* gap: 10px 30px; */
+
+  /* 행 정렬 설정 */
+  align-content: space-evenly;
+  /* 열 정렬 설정 */
+  justify-content: center;
+}
+
+.container > div {
+  border: 1px solid red;
+}

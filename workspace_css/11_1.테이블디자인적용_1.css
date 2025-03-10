@@ -1,0 +1,37 @@
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 800px;
+  margin: 20px auto;
+}
+
+tr, td {
+  border: 1px solid black;
+}
+
+td {
+  padding: 4px;
+}
+
+tr > td:first-child {
+  text-align: center;
+}
+
+.title_tr {
+  background-color: aqua;
+  text-align: center;
+}
+
+.b_span {
+  font-weight: bold;
+}
+
+.red_span {
+  color: red;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.button_area {
+  text-align: center;
+}

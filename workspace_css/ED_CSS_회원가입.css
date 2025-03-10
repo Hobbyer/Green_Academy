@@ -1,0 +1,91 @@
+body {
+  background-color: skyblue;
+}
+
+.container {
+  background-color: white;
+  border: 1px solid black;
+  width: 600px;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 5px;
+  /* 테두리 그림자 */
+  box-shadow: 3px 3px 3px grey;
+}
+
+.contents {
+  margin-top: 30px;
+}
+
+.contents > div {
+  margin-bottom: 5px;
+}
+
+.contents p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contents > div:first-child > input {
+  width: 70%;
+}
+.contents > div:first-child > button {
+  width: 149px;
+}
+
+.contents > div:nth-child(7) > input {
+  width: 35%;
+}
+.contents > div:nth-child(7) > select {
+  width: 122px;
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.contents > div:last-child > select {
+  width: 168.5px;
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.red {
+  color: red;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  width: 100%;
+  margin: 3px 0;
+}
+
+button {
+  padding: 5px 16px;
+  font-size: 0.7rem;
+  background-color: skyblue;
+  color: white;
+  border: 3px solid skyblue;
+  border-radius: 2px;
+}
+
+.btn-area {
+  text-align: center;
+  margin: 30px;
+}
+
+.btn-area > button {
+  padding: 5px 12px;
+  box-shadow: 1px 1px 3px gray;
+  margin: 2px;
+}
+
+.btn-area > button:last-child {
+  background-color: orange;
+  border: 3px solid orange;
+}

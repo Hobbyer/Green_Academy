@@ -1,0 +1,39 @@
+/* 중복된 속성을 부여하면 가장 마지막 속성이 적용된다 */
+
+div {
+  color: red;
+}
+
+div {
+  background-color: green;
+  color:blue;
+}
+
+.p1 {
+  color: red;
+}
+
+.p1 {
+  background-color: yellow;
+}
+
+/* 
+  1. 선택자가 달라도 같은 태그를 가리키면 모두 적용된다.
+  2. 다른 선택자에서 같은 속성을 변경하면 선택자의 우선순위에 따라 설정이 적용된다.
+  
+  *우선순위 : 
+  1순위-속성값에 !important 포함된 선택자
+  2순위-inline style (html파일에서 태그에 직접 style 속성을 지정)
+  3순위-id
+  4순위-class
+  5순위-태그(<tag>) 
+*/
+.s1 {
+  font-style: italic;
+  font-size: 40px;
+}
+
+/* !important */
+span {
+  font-size: 20px !important; /* 최고우선순위로 강제 설정 */
+}

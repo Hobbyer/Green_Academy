@@ -1,0 +1,12 @@
+.head > div {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(7, 104, 184);
+  color: white;
+}
+
+.head a {
+  text-decoration: none;
+  color: white;
+}

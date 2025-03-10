@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'GmarketSansMedium';
+}
+
+.container {
+  width: 70%;
+  margin : 0 auto;
+}
+
+.error-msg {
+  font-size: 0.7rem;
+  color: red;
+  font-style: italic;
+}

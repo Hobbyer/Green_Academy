@@ -1,0 +1,26 @@
+.itemList {
+  border: 1px solid black;
+  margin: 10px;
+}
+
+.itemList td:first-child > input{
+  width: 20px;
+}
+.itemList td:nth-child(2) > input{
+  width: 200px;
+}
+.itemList td:nth-child(3) > input{
+  width: 80px;
+}
+.itemList td:nth-child(4) > input{
+  width: 120px;
+}
+.itemList td:nth-child(5) > input{
+  width: 100px;
+}
+.itemList td:nth-child(6) > input{
+  width: 40px;
+}
+.itemList td:nth-child(7) > input{
+  width: 20px;
+}

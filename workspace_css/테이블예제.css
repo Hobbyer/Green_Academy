@@ -1,0 +1,36 @@
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td {
+  padding: 10px;
+  border: 1px solid black;
+}
+span {
+  font-size: 14px;
+  color: red;
+}
+textarea {
+  width: 600px;
+  height: 100px;
+}
+.head {
+  background-color: aqua;
+  text-align: center;
+}
+.section {
+  width: 150px;
+  text-align: center;
+}
+#join_form {
+  width: 900px;
+  height: 300px;
+  padding: auto;
+  margin: auto;
+  align-content: center;
+}
+#button_area {
+  width: 900px;
+  padding: 10px;
+  text-align: center;
+}

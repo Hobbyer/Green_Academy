@@ -1,0 +1,48 @@
+.header-container {
+  width: 100%;
+}
+
+.loginLine {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+
+.loginLine > span:hover {
+  cursor: pointer;
+}
+
+.banner {
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.banner > img {
+  width: 100%;
+  display: block;
+  /* height: 30vh; */
+}
+
+.banner > p {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.categoryList {
+  padding: 8px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.categoryList > ul {
+  display: flex;
+  margin: 12px;
+  gap: 16px;
+}
+
+.categoryList li:hover {
+  cursor: pointer;
+}

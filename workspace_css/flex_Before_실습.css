@@ -1,0 +1,22 @@
+nav {
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
+nav > div {
+  display: inline-block;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+ul {
+  display: flex;
+  position: absolute;
+  right: 5px;
+
+}
+
+li {
+  margin: 0 10px;
+}

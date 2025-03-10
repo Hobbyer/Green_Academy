@@ -1,0 +1,39 @@
+/* 
+  폰트의 기본 크기 : 16px
+
+  크기 결정 단위 :
+  1. px
+  2. % : 부모태그를 기준으로 백분율로 표현
+  3. em : 부모태그를 기준으로 백분율로 표현
+  4. rem : 루트 태그를 기준으로 백분율로 표현
+        ex) 1rem : 가장 상위 태그(body태그)의 100%
+            0.5rem : 가장 상위 태그(body태그)의 50%
+
+*/
+
+.p1 {
+  /* 폰트 크기 설정(기본크기 : 16px) */
+  font-size: 26px;
+  /* 폰트 두께 설정(기본두께 : 400), bold : 700 */
+  font-weight: bold;
+  /* 폰트 글씨체 설정, italic : 기울임체 */
+  font-style: italic;
+  /* 줄 간격 설정 */
+  line-height: 60px;
+  /* 텍스트 정렬 설정, center : 가운데정렬 */
+  text-align: center;
+}
+.p2 {
+  /* 2rem = 루트 태그 x 2 */
+  font-size: 2rem;
+  /* 글자색 설정 */
+  color: green;
+  /* 텍스트 꾸밈 설정, underline : 밑줄 */
+  text-decoration: underline;
+  /* 자간 설정 : 문자끼리의 여백 */
+  letter-spacing: 15px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
