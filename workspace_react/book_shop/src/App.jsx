@@ -12,11 +12,13 @@ import UserJoin from './components/UserJoin'
 import Login from './components/Login'
 import ShopInput from './common_component/ShopInput'
 import State변경함수흐름3 from './components/practice/State변경함수흐름3'
+import StorageTest from './components/practice/StorageTest'
 
 function App() {
 
   return (
     <div className='container'>
+      <StorageTest />
       <Routes>
         <Route path='' element={<UserLayout />}>
         {/* 상품목록 페이지 */}
