@@ -18,7 +18,6 @@ function App() {
 
   return (
     <div className='container'>
-      <StorageTest />
       <Routes>
         <Route path='' element={<UserLayout />}>
         {/* 상품목록 페이지 */}

@@ -34,12 +34,26 @@ const UserHeader = (props) => {
     })
   }
 
-
   return (
     <div className='header-container'>
       <div className={styles.loginLine}>
-        <span><Link to={'/login'}>Login</Link></span>
-        <span><Link to={'/join'}>Join</Link></span>
+        {
+          JSON.parse(sessionStorage.getItem('user')) ?
+          <>
+            <span>{JSON.parse(sessionStorage.getItem('user')).userId}님</span>
+            <span><Link to={'/cart'}>Cart</Link></span>
+            <span><Link to={'/order'}>Order</Link></span>
+            <span onClick={(e)=>{
+              sessionStorage.removeItem('user');
+              nav('/');
+            }}>Logout</span>
+          </>
+          : 
+          <>
+            <span><Link to={'/login'}>Login</Link></span>
+            <span><Link to={'/join'}>Join</Link></span>
+          </>
+        }
       </div>
       <div className={styles.banner}>
         <img src="/bookbanner.png" alt="" />

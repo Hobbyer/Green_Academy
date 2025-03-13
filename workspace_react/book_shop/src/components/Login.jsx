@@ -1,7 +1,10 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const nav = useNavigate();
+  
   const [login, setLogin] = useState({});
 
   const saveData = (e) => {
@@ -14,6 +17,10 @@ const Login = () => {
     axios.post(`/api/users/login`, login).then(res=>{
       if (res.data) {
         alert("로그인 성공!");
+        sessionStorage.setItem('user', JSON.stringify(res.data));
+        // 로그인 성공 시, 세션에 로그인 정보를 저장한다.
+        nav('/');
+        // 로그인 성공 시, 메인페이지로 이동한다.
       } else {
         alert ("로그인 실패");
         

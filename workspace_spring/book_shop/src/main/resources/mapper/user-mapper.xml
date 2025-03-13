@@ -5,13 +5,13 @@
 <!-- namespace에는 xml파일과 연결할 Mapper interface 파일명을 패키지를 포함하여 적어주세요 -->
 <mapper namespace="com.green.book_shop.user.mapper.UserMapper">
     <select id="getUser" resultType="UserDTO">
-        SELECT USER_ID, USER_NAME, USER_EMAIL, USER_TEL, USER_ROLL, IS_USING, JOIN_DATE
+        SELECT USER_ID, USER_NAME, USER_EMAIL, USER_TEL, USER_ROLE, IS_USING, JOIN_DATE
         FROM SHOP_USER
         WHERE USER_ID = #{userId}
     </select>
 
     <select id="loginUser" resultType="userDTO">
-        SELECT USER_ROLL
+        SELECT USER_ID, USER_ROLE
         FROM SHOP_USER
         WHERE USER_ID = #{userId} AND USER_PW = #{userPw}
     </select>

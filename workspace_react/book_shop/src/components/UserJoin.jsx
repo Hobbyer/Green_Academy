@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const UserJoin = () => {
   const regex_id = /^[a-zA-Z]{4,16}$/; //영문자 4~16글자 정규식
+  const regex_alpha_num = /^[a-zA-Z0-9]+$/; //영문자 숫자 조합 정규식
   const regex_pw = /^(?=.*[a-zA-Z])(?=.*[0-9]).{6,20}$/ //영문 숫자 조합 6~20자
   const regex_email = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i //이메일 정규식
   const regex_phone = /^0\d{2}-\d{4}-\d{4}$/ //하이픈 포함, 연락처 정규식
@@ -62,10 +63,10 @@ const UserJoin = () => {
               <input type="text" name='userId' onChange={(e)=>{
                 saveForm(e);
               }} onBlur={(e)=>{
-                regex_id.test(e.target.value) ? setErrMsg({...errMsg,
+                regex_id.test(e.target.value) || regex_alpha_num.text(e.target.value) ? setErrMsg({...errMsg,
                   id : ''
                 }) : setErrMsg({...errMsg,
-                  id : "영문자 4~16글자를 입력해주세요"
+                  id : "영문자 또는 영문자+숫자 조합 4~16글자를 입력해주세요"
                 })
               }} required />
             </td>
