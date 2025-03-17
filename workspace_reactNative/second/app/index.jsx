@@ -1,20 +1,22 @@
 import React from 'react';
-import { SafeAreaView, View, Text, StyleSheet } from 'react-native';
+import { SafeAreaView, View, Text, StyleSheet, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Login from '../components/Login';
 import CartList from '../components/CartList';
 
 const MainScreen = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      {/* <StatusBar barStyle="light-content" backgroundColor={'#555555'} /> */}
-      {/* <Login /> */}
-      <CartList />
-    </SafeAreaView>
+    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+      <SafeAreaView style={styles.mainContainer}>
+        {/* <StatusBar barStyle="light-content" backgroundColor={'#555555'} /> */}
+        {/* <Login /> */}
+        <CartList />
+      </SafeAreaView>
+    </TouchableWithoutFeedback>
   );
 };
 
 const styles = StyleSheet.create({
-  container: {
+  mainContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
