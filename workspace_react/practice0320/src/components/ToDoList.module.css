@@ -1,0 +1,47 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.inputLine {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.inputLine > input {
+  flex-grow: 2;
+}
+.inputLine > button {
+  flex-grow: 1;
+}
+
+
+.listBg {
+  background-color: #bcd6ed;
+  padding: 8px;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.list {
+  width: 100%;
+  background-color: #deebf7;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #9dc3e6;
+}
