@@ -2,7 +2,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { COLOR } from '../constants/colors'
 
-const MyButton = ({size='normal', press}) => {
+const MyButton = ({title='버튼', size='normal', press, saveText}) => {
   return (
     // <Pressable style={[styles.btnContainer, styles[size]]} onPress={()=>{}}>
     <Pressable style={(e)=>{
@@ -13,11 +13,12 @@ const MyButton = ({size='normal', press}) => {
       ]
     }} onPress={()=>{
       return [
-        press=='alert' && alert('안녕하세요'),
-        press=='console' && console.log('안녕하세요')
+        press==='alert' && alert('안녕하세요'),
+        press==='console' && console.log('안녕하세요'),
+        press==='save' && console.log(saveText)
       ]
     }}> 
-      <Text style={styles.btn}>로그인</Text>
+      <Text style={styles.btn}>{title}</Text>
     </Pressable>
   )
 }
