@@ -5,8 +5,21 @@ import styles from './ToDoList.module.css'
 import Task from './Task'
 
 const ToDoList = () => {
+
   const [list, setList] = useState(data)
   const [change, setChange] = useState('')
+
+  // const aaa = [];
+  // data.forEach((e, i) => {
+  //   const bb = {
+  //     id: e.id,
+  //     edit:false
+  //   }
+
+  //   aaa.push(bb);
+  // });
+  
+  const [editList, setEditList] = useState(null);
   
   const valueData = (e) => {
     const result = Math.max(...data.map((item, i)=>{
@@ -43,7 +56,7 @@ const ToDoList = () => {
           { list.length !== undefined ?
             list.map((item, i)=>{
               return(
-                <Task key={i} item={item} list={list} setList={setList}/>
+                <Task key={i} item={item} list={list} setList={setList} />
               )
             })
             :
