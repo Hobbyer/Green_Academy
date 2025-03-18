@@ -12,6 +12,6 @@ import java.util.List;
 @Setter
 @ToString
 public class UserDTO {
-  private String userId, userPw, userName, userEmail, userTel, userRoll, isUsing;
+  private String userId, userPw, userName, userEmail, userTel, userRole, isUsing;
   private LocalDateTime joinDate;
 }

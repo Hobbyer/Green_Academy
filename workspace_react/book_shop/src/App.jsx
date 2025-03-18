@@ -13,11 +13,13 @@ import Login from './components/Login'
 import ShopInput from './common_component/ShopInput'
 import State변경함수흐름3 from './components/practice/State변경함수흐름3'
 import StorageTest from './components/practice/StorageTest'
+import UploadTest from './components/practice/UploadTest'
 
 function App() {
 
   return (
     <div className='container'>
+      <UploadTest />
       <Routes>
         <Route path='' element={<UserLayout />}>
         {/* 상품목록 페이지 */}
@@ -27,20 +29,20 @@ function App() {
           <Route path='detail/:cateCode/:bookCode' element={<ItemDetail />}/>
 
         {/* 장바구니 페이지 */}
-          <Route path='/basket' element={<ItemBasket />}/>
+          <Route path='basket' element={<ItemBasket />}/>
 
         {/* 주문 페이지 */}
-          <Route path='/order' element={""}/>
+          <Route path='order' element={""}/>
 
         {/* 로그인 페이지 */}
-          <Route path='/login' element={<Login />}/>
+          <Route path='login' element={<Login />}/>
 
         {/* 회원가입 페이지 */}
-          <Route path='/join' element={<UserJoin />}/>
+          <Route path='join' element={<UserJoin />}/>
         </Route>
 
 
-        <Route path='/admin' element={<Admin />}>
+        <Route path='admin' element={<Admin />}>
         {/* 카테고리 관리 */}
           <Route path='cateManage' element={<CategoryInsert />}/>
 

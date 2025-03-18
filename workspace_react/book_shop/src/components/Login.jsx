@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const nav = useNavigate();
@@ -19,8 +19,9 @@ const Login = () => {
         alert("로그인 성공!");
         sessionStorage.setItem('user', JSON.stringify(res.data));
         // 로그인 성공 시, 세션에 로그인 정보를 저장한다.
-        nav('/');
         // 로그인 성공 시, 메인페이지로 이동한다.
+        console.log(res.data);
+        nav(res.data.userRole === "ROLE_ADMIN" ? '/admin' : '/');
       } else {
         alert ("로그인 실패");
         
@@ -65,6 +66,15 @@ const Login = () => {
       }}>
         로그인
       </button>
+
+      {/* <form action={"/login"} method={"POST"}>
+        <label htmlFor={"userId"}>아이디</label>
+        <input type="text" name='userId'/>
+        <label htmlFor={"userPw"}>비밀번호</label>
+        <input type="password" name='password' />
+        <button type='submit'>로그인</button>
+      </form> */}
+      <Link to={'/join'}>회원가입</Link>
     </div>
   )
 }
