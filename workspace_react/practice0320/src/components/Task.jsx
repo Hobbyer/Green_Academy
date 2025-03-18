@@ -57,9 +57,10 @@ const Task = ({item, list, setList}) => {
               setEdit(true)
             }}/>
             <img src={icon_delete} onClick={()=>{
+              if (confirm('삭제하시겠습니까?')){
               setList(list.filter((listItem)=>{
                 return listItem.id !== item.id
-              }))
+              }))}
             }} />
           </div>
         </>
