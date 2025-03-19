@@ -9,18 +9,6 @@ const ToDoList = () => {
   const [list, setList] = useState(data)
   const [change, setChange] = useState('')
 
-  // const aaa = [];
-  // data.forEach((e, i) => {
-  //   const bb = {
-  //     id: e.id,
-  //     edit:false
-  //   }
-
-  //   aaa.push(bb);
-  // });
-  
-  const [editList, setEditList] = useState(null);
-  
   const valueData = (e) => {
     const result = Math.max(...data.map((item, i)=>{
       return item.id  
@@ -38,7 +26,7 @@ const ToDoList = () => {
     <div className={styles.container}>
       <div>
         <div className={styles.title}>
-          <span>ToDoList</span>
+          ToDoList
         </div>
         <div className={styles.inputLine}>
           <input type="text" placeholder='+ Add a Task' onChange={e=>{

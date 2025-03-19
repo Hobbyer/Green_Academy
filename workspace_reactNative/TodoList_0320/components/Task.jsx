@@ -17,11 +17,11 @@ const Task = ({item, todoList, setTodoList}) => {
     <View style={styles.container}>
       {
         editing ?
-        <TextInput style={styles.input} defaultValue={item.text} autoFocus={true} onBlur={()=>{
+        <TextInput style={styles.input} defaultValue={item.text} autoFocus={true} onBlur={(e)=>{
           setEditing(false)
         }} onEndEditing={(e)=>{
           setTodoList(todoList.map((todo) => {
-            if(todo.id === item.id){
+            if(todo.id === item.id && e.nativeEvent.text !== '') {
               todo.text = e.nativeEvent.text
             }
             return todo

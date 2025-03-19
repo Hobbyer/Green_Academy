@@ -21,7 +21,7 @@ const ToDoList = () => {
       <Text style={styles.title}>To Do List</Text>
       {/* 리스트 추가 */}
       <View style={styles.inputContainer}>
-        <TextInput style={styles.input} placeholder='+ Add a Task' onChange={(e)=>{
+        <TextInput style={styles.input} value={inputText} placeholder='+ Add a Task' onChange={(e)=>{
           setInputText(e.nativeEvent.text)
         }} onSubmitEditing={(e)=>{
           inputText !== '' ?

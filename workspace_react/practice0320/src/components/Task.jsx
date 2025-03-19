@@ -28,31 +28,34 @@ const Task = ({item, list, setList}) => {
             setInputText(e.target.value);
           }} />
         </div>
-        <div style={{userSelect:'none'}}>
-          <button type='button' onClick={() => {
-                setList(
-                  list.map((listItem) => {
-                    if (listItem.id === item.id) {
-                      listItem.text = inputText
-                    }
-                    return listItem
-                  })
-                )
-                setEdit(false)
-              }}
-            >수정</button>
-          <button type='button' onClick={()=>{
-            setEdit(false)
-          }}
-          >취소</button>
+        <div>
+          <div className={styles.listBtn}>
+            <button type='button' onClick={() => {
+              inputText !== '' &&
+                  setList(
+                    list.map((listItem) => {
+                      if (listItem.id === item.id) {
+                        listItem.text = inputText
+                      }
+                      return listItem
+                    })
+                  )
+                  setEdit(false)
+                }}
+              >수정</button>
+            <button type='button' onClick={()=>{
+              setEdit(false)
+            }}
+            >취소</button>
+          </div>
         </div>
         </>
       ): (
         <>
-          <div style={{userSelect:'none'}}> {/* userSelect 속성은 사용자가 텍스트를 선택할 수 있는지 여부를 지정합니다. */}
+          <div>
             {item.text}
           </div>
-          <div style={{userSelect:'none'}}> 
+          <div> 
             <img src={icon_edit} onClick={()=>{
               setEdit(true)
             }}/>
